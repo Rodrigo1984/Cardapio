@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -81,7 +84,7 @@
         <div class="flex gap-2">
           <img
             src="./assets/hamb-2.png"
-            alt="Hamburguer smash"
+            alt="Hamburguer Duplo"
             class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
           />
 
@@ -98,7 +101,7 @@
 
               <button
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Hamburguer Smash"
+                data-name="Hamburguer Duplo"
                 data-price="32.90"
               >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -110,12 +113,12 @@
         <div class="flex gap-2">
           <img
             src="./assets/hamb-3.png"
-            alt="Hamburguer smash"
+            alt="Hamburguer Salad"
             class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
           />
 
           <div>
-            <p class="font-bold">Hamburguer Dublo</p>
+            <p class="font-bold">Hamburguer Salad</p>
 
             <p class="text-sm">
               Pão levinho com fermentação natural da trigou, burguer 160g,
@@ -123,11 +126,11 @@
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$32,90</p>
+              <p class="font-bold text-lg">R$22,90</p>
 
               <button
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Hamburguer Smash"
+                data-name="Hamburguer Salad"
                 data-price="32.90"
               >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -139,12 +142,12 @@
         <div class="flex gap-2">
           <img
             src="./assets/hamb-4.png"
-            alt="Hamburguer smash"
+            alt="Hamburguer Da Casa"
             class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
           />
 
           <div>
-            <p class="font-bold">Hamburguer Dublo</p>
+            <p class="font-bold">Hamburguer Da Casa</p>
 
             <p class="text-sm">
               Pão levinho com fermentação natural da trigou, burguer 160g,
@@ -152,12 +155,12 @@
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$32,90</p>
+              <p class="font-bold text-lg">R$52,90</p>
 
               <button
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Hamburguer Smash"
-                data-price="32.90"
+                data-name="Hamburguer DA Casa"
+                data-price="52.90"
               >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
@@ -168,12 +171,12 @@
         <div class="flex gap-2">
           <img
             src="./assets/hamb-5.png"
-            alt="Hamburguer smash"
+            alt="Hamburguer Angus"
             class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
           />
 
           <div>
-            <p class="font-bold">Hamburguer Dublo</p>
+            <p class="font-bold">Hamburguer Angus</p>
 
             <p class="text-sm">
               Pão levinho com fermentação natural da trigou, burguer 160g,
@@ -181,12 +184,12 @@
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$32,90</p>
+              <p class="font-bold text-lg">R$37,90</p>
 
               <button
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Hamburguer Smash"
-                data-price="32.90"
+                data-name="Hamburguer Angus"
+                data-price="37.90"
               >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
@@ -197,12 +200,12 @@
         <div class="flex gap-2">
           <img
             src="./assets/hamb-6.png"
-            alt="Hamburguer smash"
+            alt="Hamburguer Chef"
             class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
           />
 
           <div>
-            <p class="font-bold">Hamburguer Dublo</p>
+            <p class="font-bold">Hamburguer Chef</p>
 
             <p class="text-sm">
               Pão levinho com fermentação natural da trigou, burguer 160g,
@@ -210,12 +213,12 @@
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$32,90</p>
+              <p class="font-bold text-lg">R$35,90</p>
 
               <button
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Hamburguer Smash"
-                data-price="32.90"
+                data-name="Hamburguer Chef"
+                data-price="35.90"
               >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
@@ -283,7 +286,7 @@
     </div>
 
     <div
-      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal"
     >
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
@@ -307,7 +310,7 @@
         <div class="flex items-center justify-between mt-5 w-full">
           <button id="close-modal-btn">Fechar</button>
           <button
-            id="chekout-btn"
+            id="checkout-btn"
             class="bg-green-500 text-white px-4 py-1 rounded"
           >
             Finalizar pedido
@@ -319,10 +322,13 @@
     <footer
       class="bg-red-500 py-2 w-full fixed bottom-0 z-40 flex items-center justify-center"
     >
-      <button class="flfex items-center gap-2 text-white font-bold">
-        (<span id="cart-count">2</span>) Veja meu carrinho
+      <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+        (<span id="cart-count">0</span>) Veja meu carrinho
         <i class="fa fa-cart-plus text-lg text-white"></i>
       </button>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
